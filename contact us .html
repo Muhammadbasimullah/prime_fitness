@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home|Contact Us</title>
+  <!-- Icon Link -->
+  <link rel="shortcut icon" href="Image/logo.png">
+  <!-- Bootstrap Stylesheet link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <!-- external Css link -->
+  <link rel="stylesheet" href="css/styl.css">
+  <!-- bootstrap js link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- icon cdn strat  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- icon cdn end  -->
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .contact {
+      position: relative;
+      min-height: 100vh;
+      padding: 50px 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .contact .content {
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .contact .content h2 {
+      font-size: 36px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .contact .content p {
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .container .contactInfo {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container .contactInfo .Box {
+      padding: 20px 0;
+      display: flex;
+    }
+
+    .container .contactInfo .Box .icon {
+      min-width: 60px;
+      height: 60px;
+      background: #fccc07;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-size: 22px;
+    }
+
+    .container .contactInfo .Box .text {
+      margin-left: 20px;
+      color: black;
+    }
+
+    .container .contactInfo .Box .text h3,
+    .container .contactInfo .Box .text h4,
+    .container .contactInfo .Box .text h5 {
+      color: #333;
+    }
+
+    .contactForm {
+      width: 60%;
+      padding: 40px;
+      background: #000000;
+      margin-top: 30px;
+    }
+
+    .contactForm h2 {
+      font-size: 30px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .contactForm .inputBox {
+      position: relative;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .contactForm .inputBox input,
+    .contactForm .inputBox textarea {
+      width: 100%;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 2px solid #333;
+      outline: none;
+      resize: none;
+    }
+
+    .contactForm .inputBox span {
+      position: absolute;
+      left: 0;
+      padding: 5px 0;
+      font-size: 16px;
+      margin: 10px 0;
+      pointer-events: none;
+      transition: 0.5s;
+      color: #000000;
+    }
+
+    .contactForm .inputBox input:focus~span,
+    .contactForm .inputBox input:valid~span,
+    .contactForm .inputBox textarea:focus~span,
+    .contactForm .inputBox textarea:valid~span {
+      color: #fccc07;
+      font-size: 12px;
+      transform: translateY(-20px);
+    }
+
+    .contactForm .inputBox input[type="submit"] {
+      width: 100px;
+      background: #000000;
+      color: #ffd900;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    @media (max-width:991px) {
+      .contact {
+        padding: 50px;
+      }
+
+      .container {
+        flex-direction: column;
+      }
+
+      .container .contactInfo {
+        margin-bottom: 40px;
+      }
+
+      .contactForm {
+        width: 90%;
+      }
+    }
+
+    .dropdown:hover {
+      color: #fccc07;
+    }
+
+    .nave:hover {
+      color: #fccc07;
+    }
+
+    #bgnavbar {
+      background-color: skyblue;
+    }
+
+    .bg {
+      background-image: url(bg-3.jpg);
+      background-size: cover;
+    }
+
+    /* Additional styling to remove button-like appearance */
+    .custom-dropdown {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 1000;
+      display: none;
+      float: left;
+      min-width: 10rem;
+      padding: .5rem 0;
+      margin: .125rem 0 0;
+      font-size: 1rem;
+      color: #212529;
+      text-align: left;
+      list-style: none;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, .15);
+      border-radius: .25rem;
+    }
+
+    .custom-dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .custom-dropdown {
+      padding-top: 7.5px;
+    }
+
+    li {
+      background-color: black;
+    }
+
+    .outlined-text {
+      color: yellow;
+      text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    }
+  </style>
+</head>
+
+
+<body class="bg-black">
+  <marquee class="text-warning"  behavior="scroll" direction="left">
+    Welcome to our website! PRIME FITNESS!!!...Your Path to a Healthier.Monday - Friday: 6:00 AM - 10:00 PM.... Saturday: 8:00 AM - 8:00 PM....Sunday: Closed
+</marquee>
+  <!-- Nav Start -->
+  <nav class="navbar navbar-expand-lg fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="IMAGES/P1.png" alt="" height="60px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon " style="background-color: #f0ec08;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active text-warning" href="index.html"><b>Home</b></a>
+          &nbsp;
+          &nbsp;
+          <div class="custom-dropdown ">
+            <span class="text-warning"><b>Category</b></span>
+            <ul class="dropdown-menu text-bg-dark">
+              <li><a class="dropdown-item text-bg-dark text-warning" href=catogary\cycling.html>Cycling</a></li>
+              <li><a class="dropdown-item text-bg-dark text-warning" href="catogary\swim.html">Swiming</a></li>
+              <li><a class="dropdown-item text-bg-dark text-warning" href="Sports & Fitness.html">Sports & Fitness</a>
+              </li>
+              <li><a class="dropdown-item text-bg-dark text-warning" href="catogary\group exercise.html">Group
+                  Exercise</a></li>
+              <li><a class="dropdown-item text-bg-dark text-warning" href="catogary\salon and spa.html">Salon & Spa</a>
+              </li>
+            </ul>
+          </div>
+          &nbsp;
+          &nbsp;
+          <a class="nav-link active text-warning" href="Gallery/gallery.html"><b>Gallery</b></a>
+          &nbsp;
+          &nbsp;
+          <a class="nav-link active text-warning" href="membership.html"><b>Membership</b></a>
+          &nbsp;
+          &nbsp;
+          <a class="nav-link active text-warning" href="about us/about us.html"><b>About Us</b></a>
+          &nbsp;
+          &nbsp;
+          <a class="nav-link active text-warning" href="faq.html"><b>FAQS</b></a>
+          &nbsp;
+          &nbsp;
+          <a class="nav-link active text-warning" href="contact us .html"><b>Contact Us</b></a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Nav End -->
+
+  <!-- Carousel Start -->
+  <div class="card" style="width: 100%px;">
+    <video loop autoplay loop muted loop>
+      <source src="video/b7.mp4" type="video/mp4">
+    </video>
+  </div>
+  <!-- Carousel End -->
+
+  <section class="contact">
+    <div class="content">
+      <h2 class="text-warning">Contact Us</h2>
+      <p class="text-light">At Prime Fitness, we envision a world where fitness is not just a routine but a way of life.
+        Our mission
+        is to inspire and guide individuals of all ages and fitness levels to embrace a lifestyle that promotes
+        well-being, resilience, and vitality.From the very beginning, Prime Fitness has been committed to
+        excellence. Our state-of-the-art facilities, expert trainers, and diverse range of programs reflect our
+        unwavering dedication to providing the best fitness experience possible.</p>
+    </div>
+    <div class="container">
+      <div class="contactInfo">
+        <div class="Box">
+          <div class="icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></div>
+          <div class="text">
+            <h3 class="text-warning">Address</h3>
+            <p class="text-light">Prime Fitness, Khayaban-e-commercial near Aisha Masjid , Karachi, Pakistan</p>
+          </div>
+        </div>
+        <div class="Box">
+          <div class="icon"><i class="bi bi-telephone" aria-hidden="true"></i></div>
+          <div class="text">
+            <h4 class="text-warning">Phone</h4>
+            <p class="text-light">03180200238</p>
+          </div>
+        </div>
+        <div class="Box">
+          <div class="icon"><i class="bi bi-envelope" aria-hidden="true"></i></div>
+          <div class="text">
+            <h5 class="text-warning">Email</h5>
+            <p class="text-light">Primefitness51@Gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="contactForm">
+        <form id="myForm">
+          <h2 class="text-warning">Send Message</h2>
+          <div class="inputBox">
+              <input type="text" id="fullName" required="required">
+              <span>Full Name</span>
+          </div>
+          <div class="inputBox">
+              <input type="email" id="email" required="required">
+              <span>Email</span>
+          </div>
+          <div class="inputBox">
+              <textarea id="message" required="required"></textarea>
+              <span>Type your message....</span>
+          </div>
+          <div class="inputBox hover">
+              <button type="button" onclick="validateForm()" class="btn btn-outline-warning">Submit</button>
+          </div>
+      </form>
+
+      <script>
+        function validateForm() {
+            var fullName = document.getElementById("fullName").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+    
+            if (fullName === "" || email === "" || message === "") {
+                alert("Please fill in all fields");
+            } else {
+                // Validate Full Name: No digits allowed
+                if (/[\d]/.test(fullName)) {
+                    alert("Full Name should not contain digits");
+                    return;
+                }
+    
+                // Additional validation logic can be added here if needed
+    
+                // If the form is valid, display success alert
+                alert("Form submitted successfully!");
+    
+                // You can choose to submit the form or perform other actions here
+                document.getElementById("myForm").submit();
+            }
+        }
+    </script>
+      </div>
+    </div>
+  </section>
+  <br>
+   <!-- footer stART  -->
+   <footer class=" text-center" style="background-color: #000;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4 pb-4">
+        <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/atmospherefitnesspk/" target="_blank"
+          role="button"><i class="bi bi-facebook"></i></a>
+
+        <!-- Twitter -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="https://twitter.com/GymBodyFitness_" target="_blank"
+          role="button"><i class="bi bi-twitter"></i></a>
+
+        <!-- Google -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjsofiW5cuEAxUv_bsIHWLMDtoQPAgJ" target="_blank"
+          role="button"><i class="bi bi-google"></i></a>
+
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/primefitnesspakistan/" target="_blank"
+          role="button"><i class="bi bi-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/login" target="_blank"
+          role="button"><i class="bi bi-linkedin"></i></a>
+        <!-- Github -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/login" target="_blank"
+          role="button"><i class="bi bi-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+
+  </footer>
+  <!-- second footer -->
+  <section class="">
+    <!-- Footer -->
+    <footer class=" text-center" style="background-color: #000;">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase outlined-text">Prime Fitness</h5>
+
+            <p class="text-light">
+              Welcome to Prime Fitness, where a legacy of wellness began in 1982.Established in the vibrant year of
+              1982, Prime Fitness stands as a beacon of health and fitness. For over four decades, we have been
+              dedicated to empowering individuals on their journey to a healthier, happier life.
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase outlined-text">Catogery</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="catogary/cycling.html" class="text-warning">Cycling</a>
+              </li>
+              <li>
+                <a href="catogary/swim.html" class="text-warning">Swiming</a>
+              </li>
+              <li>
+                <a href="Sports & Fitness.html" class="text-warning">Sports & Fitness</a>
+              </li>
+              <li>
+                <a href="catogary/group exercise.html" class="text-warning">Group Exercise</a>
+              </li>
+              <li>
+                <a href="catogary/salon and spa.html" class="text-warning">Salon & Spa</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase outlined-text">Prime Fitness</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-warning">Home</a>
+              </li>
+              <li>
+                <a href="Gallery/gallery.html" class="text-warning">Gallery</a>
+              </li>
+              <li>
+                <a href="membership.html" class="text-warning">Membership </a>
+              </li>
+              <li>
+                <a href="about us/about us.html" class="text-warning">About Us</a>
+              </li>
+              <li>
+                <a href="faq.html" class="text-warning">Faq's</a>
+              </li>
+              <li>
+                <a href="contact us .html" class="text-warning">contact Us</a>
+              </li>
+
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2020 Copyright:
+        <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div> -->
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+  <!-- footer end  -->
+</body>
+
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home|Membership</title>
+    <!-- CDN start -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- CDN end -->
+    <!-- icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Icon ENd -->
+
+    <style>
+        .readmore {
+            margin-top: 20px;
+            display: inline-block;
+            color: yellow;
+            padding: 10px 20px;
+            background-color: black;
+            font-size: 17px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            transition: 0.3s ease;
+        }
+
+        .readmore:hover {
+            background-color: rgb(252, 235, 0);
+            color: black;
+        }
+
+        /* Additional styling to remove button-like appearance */
+        .custom-dropdown {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: none;
+            float: left;
+            min-width: 10rem;
+            padding: .5rem 0;
+            margin: .125rem 0 0;
+            font-size: 1rem;
+            color: #212529;
+            text-align: left;
+            list-style: none;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid rgba(0, 0, 0, .15);
+            border-radius: .25rem;
+        }
+
+        .custom-dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .custom-dropdown {
+            padding-top: 7.5px;
+        }
+
+        li {
+            background-color: black;
+        }
+
+        .outlined-text {
+            color: yellow;
+            text-shadow:
+                -1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+  <marquee class="text-warning"  behavior="scroll" direction="left">
+    Welcome to our website! PRIME FITNESS!!!...Your Path to a Healthier.Monday - Friday: 6:00 AM - 10:00 PM.... Saturday: 8:00 AM - 8:00 PM....Sunday: Closed
+</marquee>
+    <!-- Nav Start -->
+    <nav class="navbar navbar-expand-lg fixed-top ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="IMAGES/P1.png" alt="" height="60px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon " style="background-color: #f0ec08;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active text-warning" href="index.html"><b>Home</b></a>
+                    &nbsp;
+                    &nbsp;
+                    <div class="custom-dropdown ">
+                        <span class="text-warning"><b>Category</b></span>
+                        <ul class="dropdown-menu text-bg-dark">
+                            <li><a class="dropdown-item text-bg-dark text-warning"
+                                    href="catogary/cycling.html">Cycling</a></li>
+                            <li><a class="dropdown-item text-bg-dark text-warning" href="catogary/swim.html">Swiming</a>
+                            </li>
+                            <li><a class="dropdown-item text-bg-dark text-warning" href="Sports & Fitness.html">Sports &
+                                    Fitness</a>
+                            </li>
+                            <li><a class="dropdown-item text-bg-dark text-warning"
+                                    href="catogary/group exercise.html">Group Exercise</a></li>
+                            <li><a class="dropdown-item text-bg-dark text-warning"
+                                    href="catogary/salon and spa.html">Salon & Spa</a></li>
+                        </ul>
+                    </div>
+                    &nbsp;
+                    &nbsp;
+                    <a class="nav-link active text-warning" href="Gallery/gallery.html"><b>Gallery</b></a>
+                    &nbsp;
+                    &nbsp;
+                    <a class="nav-link active text-warning" href="membership.html"><b>Membership</b></a>
+                    &nbsp;
+                    &nbsp;
+                    <a class="nav-link active text-warning" href="about us/about us.html"><b>About Us</b></a>
+                    &nbsp;
+                    &nbsp;
+                    <a class="nav-link active text-warning" href="faq.html"><b>FAQS</b></a>
+                    &nbsp;
+                    &nbsp;
+                    <a class="nav-link active text-warning" href="contact us .html"><b>Contact Us</b></a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav End -->
+
+    <!-- Carousel Start -->
+    <div class="card" style="width: 100%px;">
+        <video loop autoplay loop muted loop>
+            <source src="video/b7.mp4" type="video/mp4">
+        </video>
+    </div>
+    <br>
+    <br>
+    <!-- Carousel End -->
+
+    <!-- Grid Start -->
+    <div class="container text-center">
+        <div class="row mt-5 mb-5 ">
+            <div class="col mt-4 mb-4 ">
+                <video loop autoplay loop muted loop style="width: 250px;">
+                    <source src="videos/b2.mp4" type="video/mp4">
+                </video>
+                <br>
+            </div>
+            <div class="col mt-4 mb-4">
+                <video loop autoplay loop muted loop style="width: 250px;">
+                    <source src="videos/b4.mp4" type="video/mp4" style="height: 200px;">
+                </video>
+                <br>
+            </div>
+            <div class="col mt-4 mb-4">
+                <video loop autoplay loop muted loop style="width: 250px;">
+                    <source src="videos/b3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <!-- Grid End -->
+    <div class="container-fluid mt-5 mb-5">
+        <h1 class="outlined-text mt-5 mb-5" style="text-align: center;">Membership</h1>
+
+        <p style="text-align:justify ;padding-left:20px; padding-right:20px;" class="text-light mt-5 mb-5"><b>Membership
+                which includes Swiming , Sports , Cycling , Salon & Spa.</b></p>
+        <p style="text-align:justify ;padding-left:20px; padding-right:20px;" class="text-light mt-5 mb-5">Embark on a
+            transformative journey towards peak physical fitness and overall
+            well-being by becoming a member
+            of our premier gym. With state-of-the-art facilities, expert trainers, and a vibrant community of
+            like-minded individuals, our gym membership offers an unparalleled experience designed to empower you to
+            reach your health and fitness goals.</p>
+
+        <p style="text-align:justify ;padding-left:20px; padding-right:20px;" class="text-light mt-5 mb-5">Dive into a
+            world of wellness and fitness with our swimming membership. Whether
+            you're a seasoned swimmer or
+            just dipping your toes into the water, our facility offers a sanctuary for aquatic enthusiasts of all
+            levels.
+            Immerse yourself in the tranquil embrace of our pristine pools, where each stroke propels you towards your
+            fitness goals and inner peace. With expert instructors on hand to guide you through tailored workouts or
+            refine
+            your technique, you'll feel confident and empowered in the water. From leisurely laps to heart-pounding
+            sprints,
+            our swimming membership promises a refreshing escape and a pathway to total well-being.</p>
+        <p style="text-align:justify ;padding-left:20px; padding-right:20px;" class="text-light mt-5 mb-5">Elevate your
+            game and embrace the thrill of competition with our exclusive
+            sports membership. Whether you're
+            passionate about basketball, tennis, or soccer, our state-of-the-art facilities provide the ultimate arena
+            for
+            you to hone your skills and unleash your potential. With access to top-tier equipment and amenities, you'll
+            experience the joy of play in a supportive and dynamic environment. From friendly matches to intense
+            tournaments, our diverse community of athletes ensures that there's always an opportunity to challenge
+            yourself
+            and forge lifelong connections. With our sports membership, you'll not only excel on the field or court but
+            also
+            foster a deep sense of camaraderie and achievement.</p>
+        <p style="text-align:justify ;padding-left:20px; padding-right:20px;" class="text-light mt-5 mb-5"> Pedal
+            towards a healthier and more vibrant lifestyle with our cycling
+            membership. Whether you're a seasoned
+            cyclist or just discovering the thrill of two wheels, our cutting-edge cycling studio offers the perfect
+            setting
+            to ignite your passion for riding. Feel the rhythm of the music pulse through your veins as you embark on
+            exhilarating journeys through virtual landscapes or push yourself to new limits in high-intensity interval
+            training sessions. With expert instructors leading the way, you'll conquer hills, break through barriers,
+            and
+            emerge stronger than ever before. Join our cycling community and experience the joy of movement, the rush of
+            adrenaline, and the freedom of the open road.</p>
+        <p style="text-align:justify ;padding-left:20px; padding-right:20px;" class="text-light mt-5 mb-5">Indulge in a
+            world of luxury and relaxation with our salon and spa membership.
+            Step into our oasis of
+            tranquility and leave the stresses of daily life behind as our expert therapists and stylists pamper you
+            from
+            head to toe. From rejuvenating massages to revitalizing facials, each treatment is tailored to restore
+            balance
+            to your mind, body, and spirit. Sink into plush robes, savor aromatic scents, and surrender to the blissful
+            ambiance as you embark on a journey of self-care and renewal. With exclusive access to our range of premium
+            services and amenities, you'll emerge from our sanctuary feeling refreshed, rejuvenated, and ready to take
+            on
+            the world with confidence and grace.<br>
+            <a href="Membershipform.html" class="readmore text-warning">Apply For Membership </a>
+        </p>
+      
+    </div>
+
+
+
+    <!-- Grid Start -->
+    <!-- <div class="container text-center">
+        <div class="row ">
+            <div class="col mt-4 mb-4">
+                <video loop autoplay loop muted loop style="width: 250px;">
+                    <source src="videos/b5.mp4" type="video/mp4" style="height: 200px;">
+                </video>
+                <br>
+            </div> -->
+            <!-- Grid End -->
+
+ <!-- footer stART  -->
+ <footer class=" text-center" style="background-color: #000;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4 pb-4">
+        <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/atmospherefitnesspk/" target="_blank"
+          role="button"><i class="bi bi-facebook"></i></a>
+
+        <!-- Twitter -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="https://twitter.com/GymBodyFitness_" target="_blank"
+          role="button"><i class="bi bi-twitter"></i></a>
+
+        <!-- Google -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjsofiW5cuEAxUv_bsIHWLMDtoQPAgJ" target="_blank"
+          role="button"><i class="bi bi-google"></i></a>
+
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="https://www.instagram.com/primefitnesspakistan/" target="_blank"
+          role="button"><i class="bi bi-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="https://www.linkedin.com/login" target="_blank"
+          role="button"><i class="bi bi-linkedin"></i></a>
+        <!-- Github -->
+        <a data-mdb-ripple-init class="btn text-white btn-floating m-1" style="background-color: #333333;" href="https://github.com/login" target="_blank"
+          role="button"><i class="bi bi-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+
+  </footer>
+  <!-- second footer -->
+  <section class="">
+    <!-- Footer -->
+    <footer class=" text-center" style="background-color: #000;">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase outlined-text">Prime Fitness</h5>
+
+            <p class="text-light">
+              Welcome to Prime Fitness, where a legacy of wellness began in 1982.Established in the vibrant year of
+              1982, Prime Fitness stands as a beacon of health and fitness. For over four decades, we have been
+              dedicated to empowering individuals on their journey to a healthier, happier life.
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase outlined-text">Catogery</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="catogary/cycling.html" class="text-warning">Cycling</a>
+              </li>
+              <li>
+                <a href="catogary/swim.html" class="text-warning">Swiming</a>
+              </li>
+              <li>
+                <a href="Sports & Fitness.html" class="text-warning">Sports & Fitness</a>
+              </li>
+              <li>
+                <a href="catogary/group exercise.html" class="text-warning">Group Exercise</a>
+              </li>
+              <li>
+                <a href="catogary/salon and spa.html" class="text-warning">Salon & Spa</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase outlined-text">Prime Fitness</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-warning">Home</a>
+              </li>
+              <li>
+                <a href="Gallery/gallery.html" class="text-warning">Gallery</a>
+              </li>
+              <li>
+                <a href="membership.html" class="text-warning">Membership </a>
+              </li>
+              <li>
+                <a href="about us/about us.html" class="text-warning">About Us</a>
+              </li>
+              <li>
+                <a href="faq.html" class="text-warning">Faq's</a>
+              </li>
+              <li>
+                <a href="contact us .html" class="text-warning">contact Us</a>
+              </li>
+
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2020 Copyright:
+        <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div> -->
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+  <!-- footer end  -->
+</body>
+
+</html>
